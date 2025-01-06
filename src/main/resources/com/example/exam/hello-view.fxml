@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.exam.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+    <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.exam.HelloController">
+        <TextField fx:id="ingredientTextField" />
+        <Button text="Ajouter" onAction="#ajouterIngredient" />
+        <Label fx:id="feedbackLabel" />
+    </VBox>
+    <!--
+    <children>
+
+        <ComboBox fx:id="repasComboBox" layoutX="20" layoutY="20" prefWidth="200" />
+
+
+        <ListView fx:id="ingredientsListView" layoutX="20" layoutY="60" prefWidth="200" prefHeight="150" />
+
+
+        <ListView fx:id="supplementsListView" layoutX="240" layoutY="60" prefWidth="200" prefHeight="150" />
+
+
+        <TextField fx:id="totalTextField" layoutX="20" layoutY="230" prefWidth="200" editable="false" promptText="Total: 0.00 €" />
+
+
+        <Button fx:id="ajouterIngredientButton" layoutX="20" layoutY="270" text="Ajouter Ingrédient" />
+        <Button fx:id="supprimerIngredientButton" layoutX="140" layoutY="270" text="Supprimer Ingrédient" />
+        <Button fx:id="ajouterSupplementButton" layoutX="240" layoutY="270" text="Ajouter Supplément" />
+        <Button fx:id="supprimerSupplementButton" layoutX="360" layoutY="270" text="Supprimer Supplément" />
+
+
+        <Button fx:id="finaliserCommandeButton" layoutX="240" layoutY="320" text="Finaliser Commande" />
+    </children>
+</AnchorPane>
+-->

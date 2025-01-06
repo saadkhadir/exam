@@ -9,7 +9,7 @@ public class Commande {
     private List<Repas> repas;
     private LocalDateTime dateCommande;
 
-    // Constructeur
+
     public Commande(int id_commande, Client client, List<Repas> repas, LocalDateTime dateCommande) {
         this.id_commande = id_commande;
         this.client = client;
@@ -17,7 +17,7 @@ public class Commande {
         this.dateCommande = dateCommande;
     }
 
-    // Getters et Setters
+
     public int getId_commande() {
         return id_commande;
     }
@@ -50,7 +50,7 @@ public class Commande {
         this.dateCommande = dateCommande;
     }
 
-    // Calculer le total de la commande
+
     public double calculerTotalCommande() {
         double total = 0.0;
         for (Repas repasItem : repas) {
@@ -59,7 +59,7 @@ public class Commande {
         return total;
     }
 
-    // Affichage des détails de la commande
+
     @Override
     public String toString() {
         StringBuilder details = new StringBuilder();

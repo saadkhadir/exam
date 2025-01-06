@@ -26,4 +26,15 @@ public class Client {
     public void setPrenom(String prenom) {this.prenom = prenom;}
     public void setEmail(String email) {this.email = email;}
     public void setTelephone(String telephone) {this.telephone = telephone;}
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id_client=" + id_client +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", email='" + email + '\'' +
+                ", telephone='" + telephone + '\'' +
+                '}';
+    }
 }

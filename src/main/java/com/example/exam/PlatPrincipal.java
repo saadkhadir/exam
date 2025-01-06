@@ -10,7 +10,7 @@ public class PlatPrincipal {
         this.nom = nom;
         this.prix = prix;
     }
-    public PlatPrincipal() {}
+    public PlatPrincipal(String pasta, float v) {}
     public int getId_plat() {
         return id_plat;
     }
@@ -21,5 +21,14 @@ public class PlatPrincipal {
     public void setPrix(float prix) {this.prix=prix;}
 
     public double calculerPrix() {return prix;}
+
+    @Override
+    public String toString() {
+        return "PlatPrincipal{" +
+                "id_plat=" + id_plat +
+                ", nom='" + nom + '\'' +
+                ", prix=" + prix +
+                '}';
     }
+}
 

@@ -11,6 +11,15 @@ public class Supplement {
         this.prix = prix;
     }
 
+    @Override
+    public String toString() {
+        return "Supplement{" +
+                "id_supplement=" + id_supplement +
+                ", nom='" + nom + '\'' +
+                ", prix=" + prix +
+                '}';
+    }
+
     public int getId() {
         return id_supplement;
     }

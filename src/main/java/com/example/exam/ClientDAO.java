@@ -11,7 +11,7 @@ public class ClientDAO {
         this.connection = connection;
     }
 
-    // Méthode pour ajouter un client
+
     public void ajouterClient(Client client) throws SQLException {
         String query = "INSERT INTO Client (nom, prenom, email, telephone) VALUES (?, ?, ?, ?)";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
@@ -23,7 +23,7 @@ public class ClientDAO {
         }
     }
 
-    // Méthode pour récupérer un client par ID
+
     public Client obtenirClientParId(int id) throws SQLException {
         String query = "SELECT * FROM Client WHERE id_client = ?";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
@@ -43,7 +43,7 @@ public class ClientDAO {
         return null;
     }
 
-    // Méthode pour récupérer tous les clients
+
     public List<Client> obtenirTousLesClients() throws SQLException {
         List<Client> clients = new ArrayList<>();
         String query = "SELECT * FROM Client";
@@ -62,7 +62,7 @@ public class ClientDAO {
         return clients;
     }
 
-    // Méthode pour mettre à jour un client
+
     public void mettreAJourClient(Client client) throws SQLException {
         String query = "UPDATE Client SET nom = ?, prenom = ?, email = ?, telephone = ? WHERE id_client = ?";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
@@ -75,7 +75,7 @@ public class ClientDAO {
         }
     }
 
-    // Méthode pour supprimer un client
+
     public void supprimerClient(int id) throws SQLException {
         String query = "DELETE FROM Client WHERE id_client = ?";
         try (PreparedStatement statement = connection.prepareStatement(query)) {

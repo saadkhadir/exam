@@ -14,6 +14,16 @@ public class Ingredient {
 
     }
 
+    @Override
+    public String toString() {
+        return "Ingredient{" +
+                "id_ingredient=" + id_ingredient +
+                ", nom='" + nom + '\'' +
+                ", prixUnitaire=" + prixUnitaire +
+                ", quantite=" + quantite +
+                '}';
+    }
+
     public int getId() {
         return id_ingredient;
     }

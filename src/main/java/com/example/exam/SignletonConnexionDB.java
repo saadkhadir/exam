@@ -1,3 +1,4 @@
+package com.example.exam;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -6,13 +7,13 @@ import java.sql.SQLException;
 
         static {
             try {
-                // Chargez le driver JDBC
+
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                // Initialisez la connexion
+
                 connection = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/prep2", // Remplacez par votre URL JDBC
-                        "root", // Remplacez par votre utilisateur MySQL
-                        "Elgrandejcole03" // Remplacez par votre mot de passe MySQL
+                        "jdbc:mysql://localhost:3306/exam",
+                        "root",
+                        "Elgrandejcole03"
                 );
             } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();
